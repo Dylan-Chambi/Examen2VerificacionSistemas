@@ -2,9 +2,10 @@ package webauto.tests.cambiarPass;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
-import webauto.pages.todoist.*;
+import webauto.pages.todoly.HomePage;
 import webauto.pages.todoly.LoginContextMenu;
 import webauto.pages.todoly.MainPage;
+import webauto.pages.todoly.SettingsContextMenu;
 import webauto.singletonSession.Session;
 
 import java.time.Duration;
@@ -14,6 +15,10 @@ public class TestBase {
     protected MainPage mainPage = new MainPage();
 
     protected LoginContextMenu loginContextMenu = new LoginContextMenu();
+
+    protected HomePage homePage = new HomePage();
+
+    protected SettingsContextMenu settingsContextMenu = new SettingsContextMenu();
 
     @BeforeEach
     public void openBrowser() {
