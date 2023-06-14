@@ -2,7 +2,7 @@ package webauto.controls;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import singletonSession.Session;
+import webauto.singletonSession.Session;
 
 public class ControlBase {
     protected By locator;
